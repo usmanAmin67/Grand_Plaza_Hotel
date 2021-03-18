@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    
     //  sidebar
     $('#nav-icon4').click(function () {
         $(this).toggleClass('open');
@@ -125,6 +126,7 @@ $(document).ready(function () {
 
     
     
+   
     var sel = document.getElementById('city-select');
     sel.onchange = function () {
         document.getElementById("btn__citySelect").href = this.value;
@@ -133,6 +135,11 @@ $(document).ready(function () {
     var selFooter = document.getElementById('city-select-footer');
     selFooter.onchange = function () {
         document.getElementById("btn__citySelect-footer").href = this.value;
+    }
+
+    var selMiddle = document.getElementById('city-select-middle');
+    selMiddle.onchange = function () {
+        document.getElementById("btn__citySelect-middle").href = this.value;
     }
 
 
