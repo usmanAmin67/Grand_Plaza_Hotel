@@ -180,6 +180,7 @@
   background-color: #fff;
   padding: 15px 25px 6px 25px;
   border-right: 1px solid #DEDEDE;
+  width: 100%;
 }
 
 .banner-left-container__controls .banner-input__container .banner-input {

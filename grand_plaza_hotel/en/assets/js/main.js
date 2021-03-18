@@ -126,19 +126,19 @@ $(document).ready(function () {
 
 
     var sel = document.getElementById('city-select');
-    sel.onchange = function () {
+    sel.on('change', function(){
         document.getElementById("btn__citySelect").href = this.value;
-    }
+    })
 
     var selFooter = document.getElementById('city-select-footer');
-    selFooter.onchange = function () {
+    selFooter.on('change', function() {
         document.getElementById("btn__citySelect-footer").href = this.value;
-    }
+    })
 
     var selMiddle = document.getElementById('city-select-middle');
-    selMiddle.onchange = function () {
+    selMiddle.on('change', function() {
         document.getElementById("btn__citySelect-middle").href = this.value;
-    }
+    })
 
     
 
