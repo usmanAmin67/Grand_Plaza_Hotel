@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grand Plazza Hotel</title>
     <link rel="shortcut icon" type="image/png" href="./assets/images/fav-icon.PNG" />
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/bootstrap.css">
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -90,7 +94,8 @@
                                         </select>
                                     </div>
                                 </div>
-                                <a id="btn__citySelect" target="_blank" href="http://www.booking.com/Share-6pdJkeH" class="btn btn-theme btn__big">
+                                <a id="btn__citySelect" target="_blank" href="http://www.booking.com/Share-6pdJkeH"
+                                    class="btn btn-theme btn__big">
                                     Check Availability
                                 </a>
                             </div>
@@ -157,7 +162,8 @@
                 <div class="row">
                     <div class="col-12 col-md-6">
                         <div class="banner-left-container">
-                            <div class="banner-left-container__controls controls__shadow " data-aos="fade-up" data-aos-duration="2500">
+                            <div class="banner-left-container__controls controls__shadow " data-aos="fade-up"
+                                data-aos-duration="2500">
                                 <div class="banner-input__container ">
                                     <h5>Select City</h5>
                                     <div>
@@ -169,7 +175,8 @@
                                         </select>
                                     </div>
                                 </div>
-                                <a id="btn__citySelect-middle" target="_blank" href="http://www.booking.com/Share-6pdJkeH" class="btn btn-theme btn__big">
+                                <a id="btn__citySelect-middle" target="_blank"
+                                    href="http://www.booking.com/Share-6pdJkeH" class="btn btn-theme btn__big">
                                     Check Availability
                                 </a>
                             </div>
@@ -453,7 +460,8 @@
                                     <input class="form-control" type="tel" name="" id="" placeholder="Phone">
                                 </div>
                                 <div class="form-group input-view">
-                                    <textarea class="form-control" name="" id="" rows="1" placeholder="Message"></textarea>
+                                    <textarea class="form-control" name="" id="" rows="1"
+                                        placeholder="Message"></textarea>
                                 </div>
                             </form>
                             <button type="submit" href="#" class="btn btn-theme btn__primary mt-3">
@@ -491,15 +499,22 @@
                                             <div class="banner-input__container">
                                                 <h5>Select City</h5>
                                                 <div>
-                                                    <select id="city-select-footer" class="form-control banner-input" name="">
-                                                        <option value="http://www.booking.com/Share-6pdJkeH">Alkhubar</option>
-                                                        <option value="http://www.booking.com/Share-Q1KzJC">Riyadh</option>
-                                                        <option value="http://www.booking.com/Share-IgW8SV">Jeddah</option>
-                                                        <option value="http://www.booking.com/Share-icNb2I">Jazan</option>
+                                                    <select id="city-select-footer" class="form-control banner-input"
+                                                        name="">
+                                                        <option value="http://www.booking.com/Share-6pdJkeH">Alkhubar
+                                                        </option>
+                                                        <option value="http://www.booking.com/Share-Q1KzJC">Riyadh
+                                                        </option>
+                                                        <option value="http://www.booking.com/Share-IgW8SV">Jeddah
+                                                        </option>
+                                                        <option value="http://www.booking.com/Share-icNb2I">Jazan
+                                                        </option>
                                                     </select>
                                                 </div>
                                             </div>
-                                            <a id="btn__citySelect-footer" target="_blank" href="http://www.booking.com/Share-6pdJkeH" class="btn btn-theme btn__big">
+                                            <a id="btn__citySelect-footer" target="_blank"
+                                                href="http://www.booking.com/Share-6pdJkeH"
+                                                class="btn btn-theme btn__big">
                                                 Check Availability
                                             </a>
                                         </div>
@@ -581,38 +596,58 @@
         </footer>
     </div>
     <script>
-    $(function() {
-        var Accordion = function(el, multiple) {
-            this.el = el || {};
-            this.multiple = multiple || false;
+        $(function () {
+            var Accordion = function (el, multiple) {
+                this.el = el || {};
+                this.multiple = multiple || false;
 
-            var links = this.el.find('.article-title');
-            links.on('click', {
-                el: this.el,
-                multiple: this.multiple
-            }, this.dropdown)
-        }
+                var links = this.el.find('.article-title');
+                links.on('click', {
+                    el: this.el,
+                    multiple: this.multiple
+                }, this.dropdown)
+            }
 
-        Accordion.prototype.dropdown = function(e) {
-            var $el = e.data.el;
-            $this = $(this),
-                $next = $this.next();
+            Accordion.prototype.dropdown = function (e) {
+                var $el = e.data.el;
+                $this = $(this),
+                    $next = $this.next();
 
-            $next.slideToggle();
-            $this.parent().toggleClass('open');
+                $next.slideToggle();
+                $this.parent().toggleClass('open');
 
-            if (!e.data.multiple) {
-                $el.find('.accordion-content').not($next).slideUp().parent().removeClass('open');
-            };
-        }
-        var accordion = new Accordion($('.accordion-container'), false);
-    });
+                if (!e.data.multiple) {
+                    $el.find('.accordion-content').not($next).slideUp().parent().removeClass('open');
+                };
+            }
+            var accordion = new Accordion($('.accordion-container'), false);
+        });
 
-    $(document).on('click', function(event) {
-        if (!$(event.target).closest('#accordion').length) {
-            $this.parent().toggleClass('open');
-        }
-    });
+        $(document).on('click', function (event) {
+            if (!$(event.target).closest('#accordion').length) {
+                $this.parent().toggleClass('open');
+            }
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            var sel = document.getElementById('city-select');
+            sel.onchange = function () {
+                document.getElementById("btn__citySelect").href = this.value;
+            }
+
+            var selFooter = document.getElementById('city-select-footer');
+            selFooter.onchange = function () {
+                document.getElementById("btn__citySelect-footer").href = this.value;
+            }
+
+            var selMiddle = document.getElementById('city-select-middle');
+            selMiddle.onchange = function () {
+                document.getElementById("btn__citySelect-middle").href = this.value;
+            }
+        });
     </script>
 </body>
 

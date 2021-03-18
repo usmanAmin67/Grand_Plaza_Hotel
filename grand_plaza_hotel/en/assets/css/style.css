@@ -974,4 +974,8 @@ footer .copyright-container .copyright-right ul.client-contacts li .client-conta
       -ms-flex-pack: left !important;
           justify-content: left !important;
 }
+
+.restaurant-banner{
+  padding: 10rem 0px !important;
+}
 /*# sourceMappingURL=style.css.map */
