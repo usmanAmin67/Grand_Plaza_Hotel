@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grand Plazza Hotel</title>
     <link rel="shortcut icon" type="image/png" href="./assets/images/fav-icon.PNG" />
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/bootstrap.css">
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -86,20 +90,19 @@
                             </div>
                             <div class="banner-left-container__controls" data-aos="fade-up" data-aos-duration="2500">
                                 <div class="banner-input__container">
-                                    <h5>Check-in</h5>
-                                    <input type="email" name="" id="" class="form-control banner-input" placeholder="" value="13 / June">
+                                    <h5>Select City</h5>
+                                    <div class="form-group">
+                                        <select id="city-select" class="form-control banner-input" name="">
+                                            <option value="http://www.booking.com/Share-6pdJkeH">Alkhubar</option>
+                                            <option value="http://www.booking.com/Share-Q1KzJC">Riyadh</option>
+                                            <option value="http://www.booking.com/Share-IgW8SV">Jeddah</option>
+                                            <option value="http://www.booking.com/Share-icNb2I">Jazan</option>
+                                        </select>
+                                    </div>
                                 </div>
-                                <div class="banner-input__container">
-                                    <h5>Check-out</h5>
-                                    <input type="email" name="" id="" class="form-control banner-input" placeholder="" value="13 / June">
-                                </div>
-                                <div class="banner-input__container">
-                                    <h5>Guest</h5>
-                                    <input type="email" name="" id="" class="form-control banner-input" placeholder="" value="2">
-                                </div>
-                                <button href="#" class="btn btn-theme">
+                                <a id="btn__citySelect" target="_blank" href="http://www.booking.com/Share-6pdJkeH" class="btn btn-theme btn__big">
                                     Check Availability
-                                </button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -422,7 +425,8 @@
                                     <input class="form-control" type="tel" name="" id="" placeholder="Phone">
                                 </div>
                                 <div class="form-group input-view">
-                                    <textarea class="form-control" name="" id="" rows="1" placeholder="Message"></textarea>
+                                    <textarea class="form-control" name="" id="" rows="1"
+                                        placeholder="Message"></textarea>
                                 </div>
                             </form>
                             <button type="submit" href="#" class="btn btn-theme btn__primary mt-3">
@@ -456,22 +460,21 @@
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-12">
-                                        <div class="banner-left-container__controls">
+                                        <div class="banner-left-container__controls jc-footer">
                                             <div class="banner-input__container">
-                                                <h5>Check-in</h5>
-                                                <input type="email" name="" id="" class="form-control banner-input" placeholder="" value="13 / June">
+                                                <h5>Select City</h5>
+                                                <div class="form-group">
+                                                    <select id="city-select-footer" class="form-control banner-input" name="">
+                                                        <option value="http://www.booking.com/Share-6pdJkeH">Alkhubar</option>
+                                                        <option value="http://www.booking.com/Share-Q1KzJC">Riyadh</option>
+                                                        <option value="http://www.booking.com/Share-IgW8SV">Jeddah</option>
+                                                        <option value="http://www.booking.com/Share-icNb2I">Jazan</option>
+                                                    </select>
+                                                </div>
                                             </div>
-                                            <div class="banner-input__container">
-                                                <h5>Check-out</h5>
-                                                <input type="email" name="" id="" class="form-control banner-input" placeholder="" value="13 / June">
-                                            </div>
-                                            <div class="banner-input__container">
-                                                <h5>Guest</h5>
-                                                <input type="email" name="" id="" class="form-control banner-input" placeholder="" value="2">
-                                            </div>
-                                            <button href="#" class="btn btn-theme">
+                                            <a id="btn__citySelect-footer" target="_blank" href="http://www.booking.com/Share-6pdJkeH" class="btn btn-theme btn__big">
                                                 Check Availability
-                                            </button>
+                                            </a>
                                         </div>
                                     </div>
                                     <div class="col-12 col-sm-5">
@@ -550,6 +553,8 @@
             </div>
         </footer>
     </div>
+
+
 </body>
 
 </html>

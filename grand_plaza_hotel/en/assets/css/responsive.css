@@ -67,6 +67,7 @@
 
     .banner-left-container__controls .banner-input__container {
         padding: 10px 5px 8px 5px;
+        width: calc(100% - 30px) !important;
     }
 
 
@@ -341,6 +342,10 @@
     .extra-gallery-container .gallery__inner {
         max-width: 100% !important;
     }
+
+    .jc-footer{
+        justify-content: center !important;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
@@ -603,6 +608,9 @@
 
     .double-gallery-container {
         margin-top: 100px;
+    }
+    .jc-footer{
+        justify-content: center !important;
     }
 
 }

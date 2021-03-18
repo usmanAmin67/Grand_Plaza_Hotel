@@ -131,8 +131,15 @@ p {
     background-color: #BF9A4C !important;
     text-align: center;
     border: none !important;
+
+
 }
 
+.btn__big{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .btn-theme:hover,
 .btn-theme:focus {

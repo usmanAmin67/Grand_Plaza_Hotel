@@ -124,6 +124,17 @@ $(document).ready(function () {
     // });
 
     
+    
+    var sel = document.getElementById('city-select');
+    sel.onchange = function () {
+        document.getElementById("btn__citySelect").href = this.value;
+    }
+
+    var selFooter = document.getElementById('city-select-footer');
+    selFooter.onchange = function () {
+        document.getElementById("btn__citySelect-footer").href = this.value;
+    }
+
 
 });
 
