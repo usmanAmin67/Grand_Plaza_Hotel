@@ -34,7 +34,7 @@ h2 {
     color: #000;
     line-height: 44px;
     position: relative;
-    margin-left: 42px;
+    margin-right: 42px;
     display: inline-block;
    
 }
@@ -42,7 +42,7 @@ h2 {
 h2::before{
     content: '';
     position: absolute;
-    left: -42px;
+    right: -42px;
     top: 50%;
     transform: translateY(-50%);
     background-color: #000;
